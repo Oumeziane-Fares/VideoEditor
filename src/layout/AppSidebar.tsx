@@ -47,6 +47,11 @@ const navItems: NavItem[] = [
     name: "Calendar",
     path: "/calendar",
   },
+    {
+    icon: <PageIcon />,
+    name: 'Translation Editor',
+    path: '/editor',
+  },
   {
     icon: <UserCircleIcon />,
     name: "User Profile",

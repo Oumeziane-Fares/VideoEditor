@@ -59,6 +59,7 @@ import AppLayout from "./layout/AppLayout";
 import { ScrollToTop } from "./components/common/ScrollToTop";
 import TaskList from "./pages/Task/TaskList";
 import Saas from "./pages/Dashboard/Saas";
+import EditorPage from './pages/EditorPage';
 
 export default function App() {
   return (
@@ -82,6 +83,7 @@ export default function App() {
             <Route path="/faq" element={<Faqs />} />
             <Route path="/pricing-tables" element={<PricingTables />} />
             <Route path="/blank" element={<Blank />} />
+            <Route path="/editor" element={<EditorPage />} />
 
             {/* Forms */}
             <Route path="/form-elements" element={<FormElements />} />
@@ -126,6 +128,7 @@ export default function App() {
             <Route path="/tabs" element={<Tabs />} />
             <Route path="/tooltips" element={<Tooltips />} />
             <Route path="/videos" element={<Videos />} />
+            
 
             {/* Charts */}
             <Route path="/line-chart" element={<LineChart />} />

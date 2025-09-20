@@ -2,13 +2,18 @@
 
 import React from 'react';
 import { VideoTranslationEditor } from '../components/VideoTranslationEditor/VideoTranslationEditor';
-import BreadCrumb from "../pages/UiElements/BreadCrumb";// Corrected path based on App.tsx
+import PageMeta from '../components/common/PageMeta';
 
 const EditorPage: React.FC = () => {
   return (
     <>
-      <BreadCrumb title="Translation Editor" />
-      <div className="flex flex-col gap-10 pt-4">
+      {/* This sets the title and meta description for the page */}
+      <PageMeta 
+        title="Translation Editor" 
+        description="A page for comparing video translations." // ✅ ADDED THIS REQUIRED PROP
+      />
+      
+      <div className="pt-4">
         <VideoTranslationEditor />
       </div>
     </>
